@@ -1,4 +1,4 @@
-package com.devsuperior.dslist.entities.dto;
+package com.devsuperior.dslist.dto;
 
 import org.springframework.beans.BeanUtils;
 
