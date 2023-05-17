@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "fb101a00-68b4-4db7-a53a-bbe7c957f18e",
+		"name": "DSList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24512307"
+	},
+	"item": [
+		{
+			"name": "Games",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostdslistprod}}/games",
+					"host": [
+						"{{hostdslistprod}}"
+					],
+					"path": [
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Game lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostdslistprod}}/lists",
+					"host": [
+						"{{hostdslistprod}}"
+					],
+					"path": [
+						"lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Game replacement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"sourceIndex\":1,\r\n    \"destinationIndex\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostdslistprod}}/lists/1/replacement",
+					"host": [
+						"{{hostdslistprod}}"
+					],
+					"path": [
+						"lists",
+						"1",
+						"replacement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Game by list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostdslistprod}}/lists/1/games",
+					"host": [
+						"{{hostdslistprod}}"
+					],
+					"path": [
+						"lists",
+						"1",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Games by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostdslistprod}}/games/10",
+					"host": [
+						"{{hostdslistprod}}"
+					],
+					"path": [
+						"games",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
