@@ -34,6 +34,10 @@ Principal objetivo é aplicar os seguintes conceitos:
 
 # Como executar o projeto
 
+### acesso ao swagger
+
+- Link: http://localhost:8080/swagger-ui.html
+
 ## Back end
 Pré-requisitos: Java 11
 
